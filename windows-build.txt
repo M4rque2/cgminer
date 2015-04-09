@@ -48,7 +48,7 @@ was installed.
 **************************************************************************************
 * Run the MSYS shell for the first time to create your user directory                *
 **************************************************************************************
-(Start Icon/keyboard key ==> All Programs ==> MinGW ==> MinGW Shell).
+C:\MinGW\msys\1.0\msys.bat
 This will create your user directory for you.
 
 **************************************************************************************
@@ -107,7 +107,7 @@ Note: If you are on a 32 bit version of windows "Program Files (x86)" will be
 * Install pkg-config                                                                 *
 **************************************************************************************
 Go to this url ==> http://www.gtk.org/download/win32.php
-Scroll down to where it shows pkg-cfg.
+Scroll down to where it shows pkg-config.
 Download the file from the tool link. Extract "pkg-config.exe" from bin and place in
 your  \MinGW\bin directory.
 Download the file from the "Dev" link. Extract "pkg.m4" from share\aclocal and place
@@ -117,7 +117,7 @@ in your \MingW\share\aclocal directory.
 * Install libcurl                                                                    *
 **************************************************************************************
 Go to this url ==> http://curl.haxx.se/download.html#Win32
-At the section where it says "Win32 - Generic", Click on the link that indicates
+At the section where it says "Win64 - MinGW64", Click on the link that indicates
 Win32 2000.XP 7.27.0 libcurl SSL and download it.
 The one I downloaded may not be current for you. Choose the latest.
 Extract the files that are in the zip (bin, include, and lib) to their respective
@@ -137,7 +137,7 @@ Another way is to type "cd cg" and then press the tab key; It will auto fill.
 Type the lines below one at a time. Look for problems after each one before going on
 to the next.
 
-      adl.sh (optional - see below)
+      autogen.sh (optional - see below)
       autoreconf -fvi
       CFLAGS="-O2 -msse2" ./configure (additional config options, see below)
       make
